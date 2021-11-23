@@ -11,7 +11,7 @@
 
 ## Course Content
 
-> :x: Section 1,2,3 has no source code
+> :x: Section *1,2,3* and *22* have no source code
 
 | #   | Section                                  | Status |
 | --- | ---------------------------------------- | ------ |
