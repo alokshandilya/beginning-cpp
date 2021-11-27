@@ -22,7 +22,7 @@
 | 5   | [***Structure of a C++ Program***](https://github.com/alokshandilya/beginning-cpp/tree/main/05-structure-of-a-cpp-program) | :heavy_check_mark: |
 | 6   | [***Variables and Constants***](https://github.com/alokshandilya/beginning-cpp/tree/main/06-variables-and-constants)       | :heavy_check_mark: |
 | 7   | [***Arrays and Vectors***](https://github.com/alokshandilya/beginning-cpp/tree/main/07-arrays-and-vectors)                 | :heavy_check_mark: |
-| 8   | Statements and Operators                                                                                                   |
+| 8   | [***Statements and Operators***](https://github.com/alokshandilya/beginning-cpp/tree/main/08-statements-and-operators)     | :heavy_check_mark: |
 | 9   | Controlling Program Flow                                                                                                   |
 | 10  | Characters and Strings                                                                                                     |
 | 11  | Functions                                                                                                                  |
