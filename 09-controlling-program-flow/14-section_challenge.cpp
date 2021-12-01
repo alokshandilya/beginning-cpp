@@ -90,6 +90,7 @@ int main() {
     cout << "Q - Quit" << endl;
     cout << "\nEnter your choice: ";
     cin >> selection;
+    // try later with switch statement
     if (selection == 'P' || selection == 'p') {
       if (numbers.size() == 0)
         cout << "[] - the list is empty" << endl;
@@ -141,6 +142,8 @@ int main() {
       cout << "Unknown selection, please try again" << endl;
     }
   } while (selection != 'q' && selection != 'Q');
+  // we could also use ->
+  // while ( ! (selection == 'q' || selection == 'Q');
 
   cout << endl;
   return 0;

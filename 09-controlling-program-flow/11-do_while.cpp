@@ -30,7 +30,7 @@ int main() {
       cout << "Unknown option -- try again..." << endl;
   } while (selection != 'q' && selection != 'Q');
   // we could also use ->
-  // while ( ! (selection == 'Q' || selection == 'q');
+  // while ( ! (selection == 'q' || selection == 'Q');
   // If the loop condition uses || instead of && in line 30, then,
   // If the selection is not equal to 'q' then the while condition will be true
   // & the second part will not be evaluated. So we continue to loop.
