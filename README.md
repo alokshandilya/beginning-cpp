@@ -25,7 +25,7 @@
 | 8   | [***Statements and Operators***](https://github.com/alokshandilya/beginning-cpp/tree/main/08-statements-and-operators)     | :heavy_check_mark: |
 | 9   | [***Controlling Program Flow***](https://github.com/alokshandilya/beginning-cpp/tree/main/09-controlling-program-flow)     | :heavy_check_mark: |
 | 10  | [***Characters and Strings***](https://github.com/alokshandilya/beginning-cpp/tree/main/10-characters-and-strings)         | :heavy_check_mark: |
-| 11  | Functions                                                                                                                  |
+| 11  | [***Functions***](https://github.com/alokshandilya/beginning-cpp/tree/main/11-functions)                                   | :heavy_check_mark: |
 | 12  | Pointers and References                                                                                                    |
 | 13  | OOP - Classes and Objects                                                                                                  |
 | 14  | Operator Overloading                                                                                                       |
