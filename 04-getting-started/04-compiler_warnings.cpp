@@ -1,9 +1,9 @@
 #include <iostream>
 
 int main() {
-  int myFavouriteNumber;
-  std::cout << "Hello!! World" << std::endl;
-  return 0;
+    int myFavouriteNumber;
+    std::cout << "Hello!! World" << std::endl;
+    return 0;
 }
 
 // compiler warnings
