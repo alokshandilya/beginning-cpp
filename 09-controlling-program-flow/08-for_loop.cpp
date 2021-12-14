@@ -8,50 +8,43 @@ using std::endl;
 using std::vector;
 
 int main() {
-  for (int i{1}; i <= 10; ++i)
-    cout << i << endl; // 1 to 10 (each in a line)
-  for (int i{1}; i <= 10; i += 2)
-    cout << i << endl; // 1, 3, 5, 7, 9 (each in a line)
-  for (int i{10}; i > 0; --i)
-    cout << i << endl;         // 10 to 1 (each in a line)
-  cout << "Blastoff!" << endl; // will print only once not 10 times.
-  for (int i{10}; i <= 100; i += 10) {
-    if (i % 15 == 0)
-      cout << i << endl; // 30 60 90 (each in a line)
-  }
-  for (int i{1}, j{5}; i <= 5; ++i, ++j)
-    cout << i << " + " << j << " = " << (i + j)
-         << endl; // output (below in comments)
-  for (int i{1}; i <= 100; ++i) {
-    cout << i;
-    if (i % 5 == 0)
-      cout << endl;
-    else
-      cout << " ";
-  }
-  for (int i{1}; i <= 100; ++i) {
-    cout << i << ((i % 10 == 0) ? "\n" : " ");
-  }
+    for (int i{1}; i <= 10; ++i)
+        cout << i << endl; // 1 to 10 (each in a line)
+    for (int i{1}; i <= 10; i += 2)
+        cout << i << endl; // 1, 3, 5, 7, 9 (each in a line)
+    for (int i{10}; i > 0; --i)
+        cout << i << endl;       // 10 to 1 (each in a line)
+    cout << "Blastoff!" << endl; // will print only once not 10 times.
+    for (int i{10}; i <= 100; i += 10) {
+        if (i % 15 == 0)
+            cout << i << endl; // 30 60 90 (each in a line)
+    }
+    for (int i{1}, j{5}; i <= 5; ++i, ++j)
+        cout << i << " + " << j << " = " << (i + j)
+             << endl; // output (below in comments)
+    for (int i{1}; i <= 100; ++i) {
+        cout << i;
+        if (i % 5 == 0)
+            cout << endl;
+        else
+            cout << " ";
+    }
+    for (int i{1}; i <= 100; ++i) {
+        cout << i << ((i % 10 == 0) ? "\n" : " ");
+    }
 
-  vector<int> nums{10, 20, 30, 40, 50};
-  for (unsigned i{0}; i < nums.size(); ++i) // if we use int i{0} then warning
-    cout << nums[i] << endl;
-  // because .size() returns unsigned int & it will compile fine
-  // but can generate warning ...
-  // comparison b/w signed and unsigned integers. (on my machine warning shown
-  // is below before output)
-  cout << endl;
-  return 0;
+    vector<int> nums{10, 20, 30, 40, 50};
+    for (unsigned i{0}; i < nums.size(); ++i)
+        cout << nums[i] << endl;
+    // if we use int i{0} then warning
+    // because .size() returns unsigned int & it will compile fine
+    // but can generate warning ...
+    // comparison b/w signed and unsigned integers.
+    cout << endl;
+    return 0;
 }
 
-// OUTPUT :
-//
-// 08-for_loop.cpp: In function ‘int main()’:
-// 08-for_loop.cpp:37:20: warning: comparison of integer expressions of
-// different signedness: ‘int’ and ‘std::vector<int>::size_ty pe’ {aka ‘long
-// unsigned int’} [-Wsign-compare]
-//    37 |   for (int i{0}; i < nums.size(); ++i) // if we use int i{0} then warning
-//       |                  ~~^~~~~~~~~~~~~
+// output
 //
 // 1 + 5 = 6
 // 2 + 6 = 8
@@ -93,3 +86,4 @@ int main() {
 // 30
 // 40
 // 50
+

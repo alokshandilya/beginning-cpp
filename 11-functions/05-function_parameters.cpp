@@ -13,51 +13,52 @@ void pass_by_value3(vector<string> v);
 void print_vector(vector<string> v);
 
 void pass_by_value1(int num) {
-  num = 1000;
+    num = 1000;
 }
 
 void pass_by_value2(string s) {
-  s = "Changed";
+    s = "Changed";
 }
 
 void pass_by_value3(vector<string> v) {
-  v.clear(); // delete all vector elements
+    v.clear(); // delete all vector elements
 }
 
 void print_vector(vector<string> v) {
-  for (auto s : v)
-    cout << s << " ";
-  cout << endl;
+    for (auto s : v)
+        cout << s << " ";
+    cout << endl;
 }
 
 // main
 int main() {
-  int num{10};
-  int another_num{20};
-  // pass by value (local copy)
-  cout << "num before calling pass_by_value1 : " << num << endl;
-  pass_by_value1(num);
-  cout << "num after calling pass_by_value1 : " << num << endl;
+    int num{10};
+    int another_num{20};
+    // pass by value (local copy)
+    cout << "num before calling pass_by_value1 : " << num << endl;
+    pass_by_value1(num);
+    cout << "num after calling pass_by_value1 : " << num << endl;
 
-  cout << "\nanother_num before calling pass_by_value1 : " << another_num
-       << endl;
-  pass_by_value1(another_num);
-  cout << "another_num after calling pass_by_value1 : " << another_num << endl;
+    cout << "\nanother_num before calling pass_by_value1 : " << another_num
+         << endl;
+    pass_by_value1(another_num);
+    cout << "another_num after calling pass_by_value1 : " << another_num
+         << endl;
 
-  string name{"Alok"};
-  cout << "\nname before calling pass_by_value2 : " << name << endl;
-  pass_by_value2(name);
-  cout << "name after calling pass_by_value2 : " << name << endl;
+    string name{"Alok"};
+    cout << "\nname before calling pass_by_value2 : " << name << endl;
+    pass_by_value2(name);
+    cout << "name after calling pass_by_value2 : " << name << endl;
 
-  vector<string> stooges{"Larry", "Moe", "Curly"};
-  cout << "\nstooges before calling pass_by_value3 : ";
-  print_vector(stooges);
-  pass_by_value3(stooges);
-  cout << "stooges after calling pass_by_value3 : ";
-  print_vector(stooges);
+    vector<string> stooges{"Larry", "Moe", "Curly"};
+    cout << "\nstooges before calling pass_by_value3 : ";
+    print_vector(stooges);
+    pass_by_value3(stooges);
+    cout << "stooges after calling pass_by_value3 : ";
+    print_vector(stooges);
 
-  cout << endl;
-  return 0;
+    cout << endl;
+    return 0;
 }
 
 // output
@@ -68,8 +69,8 @@ int main() {
 // another_num before calling pass_by_value1 : 20
 // another_num after calling pass_by_value1 : 20
 //
-// name before calling pass_by_value2 : Alok 
-// name after calling pass_by_value2 : Alok 
+// name before calling pass_by_value2 : Alok
+// name after calling pass_by_value2 : Alok
 //
 // stooges before calling pass_by_value3 : Larry Moe Curly
 // stooges after calling pass_by_value3 : Larry Moe Curly
