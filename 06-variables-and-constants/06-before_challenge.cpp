@@ -35,42 +35,44 @@ using std::cout;
 using std::endl;
 
 int main() {
-  const float pricePerRoom{30};
-  const float salesTaxPercent{6.0 / 100.0}; // directly as percent
-                                            // remember, {6/100} will act as int
-                                            // and it will truncate to 0.
-  // or
-  // const float salesTaxPercent {0.06};
-  const int estimateExpiry{30}; // days
-  cout << "Alok's Carpet Cleaning Service\nCharges $30 per room\nSales tax is 6%"
-       << endl;
-  cout << "Estimates are valid for 30 days" << endl << endl;
+    const float pricePerRoom{30};
+    const float salesTaxPercent{6.0 / 100.0};
+    // directly as percent. remember {6/100} will act as int and it will
+    // truncate to 0.
 
-  int numberOfRooms{0};
-  cout << "Enter the number of rooms you would like cleaned." << endl;
-  cin >> numberOfRooms;
+    // or
+    // const float salesTaxPercent {0.06};
+    const int estimateExpiry{30}; // days
+    cout << "Alok's Carpet Cleaning Service\nCharges $30 per room\nSales tax "
+            "is 6%"
+         << endl;
+    cout << "Estimates are valid for 30 days" << endl << endl;
 
-  cout << "\n==============================================\n" << endl;
-  cout << "Estimate of carpet cleaning service :" << endl;
-  cout << "Number of rooms : " << numberOfRooms << endl;
-  cout << "Price per room : $" << pricePerRoom << endl;
+    int numberOfRooms{0};
+    cout << "Enter the number of rooms you would like cleaned." << endl;
+    cin >> numberOfRooms;
 
-  float cost{pricePerRoom * numberOfRooms};
-  cout << "Cost : $" << cost << endl;
+    cout << "\n==============================================\n" << endl;
+    cout << "Estimate of carpet cleaning service :" << endl;
+    cout << "Number of rooms : " << numberOfRooms << endl;
+    cout << "Price per room : $" << pricePerRoom << endl;
 
-  float salesTax = (cost * salesTaxPercent);
-  cout << "Tax : $" << salesTax << endl;
+    float cost{pricePerRoom * numberOfRooms};
+    cout << "Cost : $" << cost << endl;
 
-  cout << "\n==============================================\n" << endl;
+    float salesTax = (cost * salesTaxPercent);
+    cout << "Tax : $" << salesTax << endl;
 
-  float totalEstimate{cost + salesTax};
-  cout << "Total estimate : $" << totalEstimate << endl;
-  cout << "This estimate is valid for " << estimateExpiry << " days." << endl;
+    cout << "\n==============================================\n" << endl;
 
-  return 0;
+    float totalEstimate{cost + salesTax};
+    cout << "Total estimate : $" << totalEstimate << endl;
+    cout << "This estimate is valid for " << estimateExpiry << " days." << endl;
+
+    return 0;
 }
 
-// Output
+// output
 //
 // Alok's Carpet Cleaning Service
 // Charges $30 per room

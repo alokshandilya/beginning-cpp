@@ -8,72 +8,72 @@ using std::endl;
 
 int main() {
 
-  /*****************************
-   *      Character Type
-   * **************************/
-  char lastInitial{'S'};
-  cout << "My last Name Initial is : " << lastInitial << endl;
+    /*****************************
+     *      Character Type
+     * **************************/
+    char lastInitial{'S'};
+    cout << "My last Name Initial is : " << lastInitial << endl;
 
-  /*****************************
-   *      Integer Type
-   * **************************/
-  unsigned short int examScore{77}; // same as unsigned short examScore {77};
-                                    // by default it's signed.
-  cout << "My Exam Score is : " << examScore << endl;
+    /*****************************
+     *      Integer Type
+     * **************************/
+    unsigned short int examScore{77}; // same as unsigned short examScore {77};
+                                      // by default it's signed.
+    cout << "My Exam Score is : " << examScore << endl;
 
-  int countriesRepresented{65};
-  cout << "There were " << countriesRepresented
-       << " countries represented in my meeting." << endl;
+    int countriesRepresented{65};
+    cout << "There were " << countriesRepresented
+         << " countries represented in my meeting." << endl;
 
-  // long peopleInIndia {1,396,864,884};      //invalid
-  long peopleInIndia{1'396'864'884}; // valid (' can be ignored but improves
-                                     // readability) -- c++14 Feature
-  cout << "There are about " << peopleInIndia << " people in India." << endl;
+    // long peopleInIndia{1,396,864,884}; //invalid
+    long peopleInIndia{1'396'864'884}; // valid (' can be ignored but improves
+                                       // readability) -- c++14 Feature
+    cout << "There are about " << peopleInIndia << " people in India." << endl;
 
-  // long peopleOnEarth {7'800'000'000};       // may not run with long and can
-  // overflow then use long long.
-  long long peopleOnEarth{7'800'000'000};
-  cout << "There are about " << peopleOnEarth << " people on Earth." << endl;
+    // long peopleOnEarth {7'800'000'000}; // may not run with long and can
+    // overflow then use long long (depends on compiler and other factors)
+    long long peopleOnEarth{7'800'000'000};
+    cout << "There are about " << peopleOnEarth << " people on Earth." << endl;
 
-  long long distanceToAlphaCentauri{
-      9'461'000'000'000}; // may run also with long depends on compiler and
-                          // architecture.
-  cout << "The distance to alpha centauri is : " << distanceToAlphaCentauri
-       << " km" << endl;
+    long long distanceToAlphaCentauri{
+        9'461'000'000'000}; // may run also with long depends on compiler and
+                            // architecture.
+    cout << "The distance to alpha centauri is : " << distanceToAlphaCentauri
+         << " km" << endl;
 
-  /*****************************
-   *   Floating point types
-   * **************************/
-  float carPayment{401.23};
-  cout << "My car payment is " << carPayment << endl;
+    /*****************************
+     *   Floating point types
+     * **************************/
+    float carPayment{401.23};
+    cout << "My car payment is " << carPayment << endl;
 
-  double pi{3.14159};
-  cout << "PI is approx. " << pi << endl;
+    double pi{3.14159};
+    cout << "PI is approx. " << pi << endl;
 
-  long double largeAmount{2.7e120}; // 2.7*10^120
-  cout << "Large amount is : " << largeAmount << endl;
+    long double largeAmount{2.7e120}; // 2.7*10^120
+    cout << "Large amount is : " << largeAmount << endl;
 
-  /*****************************
-   *      Boolean Type
-   * **************************/
-  bool gameOver{false};
-  cout << "The value of gameover is :" << gameOver << endl; // will output 0
+    /*****************************
+     *      Boolean Type
+     * **************************/
+    bool gameOver{false};
+    cout << "The value of gameover is :" << gameOver << endl; // will output 0
 
-  /*****************************
-   *      Overflow Example
-   * **************************/
-  short value1{30000};
-  short value2{1000};
-  short sum{value1 + value2};
-  short product{value1 * value2}; // this will overflow (-15488 in this case).
+    /*****************************
+     *      Overflow Example
+     * **************************/
+    short value1{30000};
+    short value2{1000};
+    short sum{value1 + value2};
+    short product{value1 * value2}; // this will overflow (-15488 in this case).
 
-  cout << "The sum and product of " << value1 << " and " << value2
-       << " is : " << sum << " and " << product << endl;
-  return 0;
+    cout << "The sum and product of " << value1 << " and " << value2
+         << " is : " << sum << " and " << product << endl;
+    return 0;
 }
 
-// Ouput (C++ 11 list initialization syntax gives helpful warning messages like
-// below)
+// C++ 11 list initialization syntax gives helpful warning messages (at
+// compile time or maybe also your IDE is smart like neovim with lsp in my case)
 //
 // 03-primitive_data_types.cpp: In function ‘int main()’:
 // 03-primitive_data_types.cpp:65:23: warning: narrowing conversion of
@@ -85,6 +85,9 @@ int main() {
 //    66 |     short product {value1 * value2};        // this will overflow
 //    (-15488 in this case).
 //       |                    ~~~~~~~^~~~~~~~
+
+// output
+//
 // My last Name Initial is : S
 // My Exam Score is : 77
 // There were 65 countries represented in my meeting.
