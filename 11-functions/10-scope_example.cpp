@@ -10,7 +10,7 @@ void global_example();
 void static_local_example();
 
 int num{300}; // Global variable - declared outside any class or function
-              // can be changed by program or functions.
+// can be changed by program or functions.
 
 void global_example() {
     cout << "\nGlobal num is: " << num << " in global_example - start" << endl;
@@ -28,8 +28,7 @@ void local_example(int x) {
 
 void static_local_example() {
     static int num{5000}; // local to static_local_example static - retains it's
-                          // value between calls
-                          // can behave like global but scope is local.
+    // value between calls can behave like global but scope is local.
     cout << "\nLocal static  num is: " << num
          << " in static_local_example - start" << endl;
     num += 1000;
@@ -43,7 +42,7 @@ int main() {
 
     cout << "Local num is : " << num << " in main" << endl;
 
-    { // creates a new level of scope
+    {   // creates a new level of scope
         int num{200}; // local to this inner block
         cout << "Local num is: " << num << " in inner block in main" << endl;
         cout << "Inner block in main can see out - num1 is: " << num1 << endl;

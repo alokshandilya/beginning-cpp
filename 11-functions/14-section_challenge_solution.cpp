@@ -283,14 +283,18 @@ void handle_find(const vector<int> &v) {
 This function is called when the user selects the quit
 option from the main menu
 ***************************************************************/
-void handle_quit() { cout << "Goodbye" << endl; }
+void handle_quit() {
+    cout << "Goodbye" << endl;
+}
 
 /***************************************************************
 This function is called whenever the user enters a selection
 and we don't know how to handle it.
 It is not one of the valid options in the main menu
 ***************************************************************/
-void handle_unknown() { cout << "Unknown selection - try again" << endl; }
+void handle_unknown() {
+    cout << "Unknown selection - try again" << endl;
+}
 
 /***************************************************************
 This function expects a list of integers as a vector

@@ -25,7 +25,7 @@ void set_array(int arr[], size_t size, int value) {
 }
 
 int main() {
-    int my_scores[]{100, 98, 90, 86, 84};
+    int my_scores[] {100, 98, 90, 86, 84};
     // pass by value of location of my_scores (where 100 is stored).
     // as location of array is passed -> the function can modify the actual
     // array. const can be used so, we get compiler error and can debug it.

@@ -11,8 +11,8 @@ using std::fixed;
 using std::setprecision;
 using std::string;
 
-// default values can be in proptotype or defination (not both)
-// (best practive to include in proptotype). They must appear at the tail end of
+// default values can be in proptotype or definition (not both)
+// (best practice to include in proptotype). They must appear at the tail end of
 // the parmameter list.
 // can have multiple default values.
 // (must appear consecutively at the tail end of the parmater list).
