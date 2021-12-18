@@ -2,27 +2,27 @@
 // declared constants
 
 /*******************************************
- 
- * Alok's Carpet Cleaning Service
- * Charges:
- *    $25 per small room
- *    $35 per large room
- * Sales tax rate is 6%
- * Estimates are valid for 30 days
 
- * Prompt the user for the number of small and large rooms
- * they would like cleaned and provide an estimate such as :
+   Alok's Carpet Cleaning Service
+   Charges:
+      $25 per small room
+      $35 per large room
+   Sales tax rate is 6%
+   Estimates are valid for 30 days
 
- * Estimate for carpet cleaning service:
- * Number of small rooms : 3
- * Number of large rooms : 1
- * Price per small room : $25
- * Price per large room : $35
- * Cost : $110
- * Tax : $6.6
- * ====================================
- * Total Estimate : $116.6
- * This estimate is valid for 30 days.
+   Prompt the user for the number of small and large rooms
+   they would like cleaned and provide an estimate such as :
+
+   Estimate for carpet cleaning service:
+   Number of small rooms : 3
+   Number of large rooms : 1
+   Price per small room : $25
+   Price per large room : $35
+   Cost : $110
+   Tax : $6.6
+   ====================================
+   Total Estimate : $116.6
+   This estimate is valid for 30 days.
 
 *******************************************/
 
@@ -47,7 +47,7 @@ int main() {
     int numberOfSmallRooms{0};
     int numberOfLargeRooms{0};
     cout << "Enter the number of small and large rooms you would like to be "
-            "cleaned"
+         "cleaned"
          << endl;
     cin >> numberOfSmallRooms >> numberOfLargeRooms;
 

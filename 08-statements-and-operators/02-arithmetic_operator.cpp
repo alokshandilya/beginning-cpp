@@ -33,7 +33,7 @@ int main() {
     myResult = myNumber2 / myNumber1;
     cout << myNumber2 << " / " << myNumber1 << " = " << myResult
          << endl; // outputs 0 as for int 100/200 = 0.5 (being int it gets
-                  // truncated i.e cut short)
+    // truncated i.e cut short)
     myResult = myNumber1 % myNumber2;
     cout << myNumber1 << " % " << myNumber2 << " = " << myResult
          << endl; // 200 % 100 = 0 (remainder when 200 is divided by 100)
@@ -42,7 +42,7 @@ int main() {
     myResult = myNumber1 % myNumber2;
     cout << myNumber1 << " % " << myNumber2 << " = " << myResult << endl; // 1
     cout << 5 / 10 << endl; // here 5 and 10 will by default will be treated as
-                            // ints so output will be 0 (0.5 truncated)
+    // ints so output will be 0 (0.5 truncated)
     cout << 5.0 / 10.0 << endl; // here the output will be 0.5
     cout << endl;
 

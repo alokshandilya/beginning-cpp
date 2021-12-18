@@ -17,7 +17,7 @@ int main() {
         cout << num << " is greater than or equal to " << min << endl;
         // cout << diff;     // error (undefined diff)
         int diff{num - min}; // diff can be used inside this if block after this
-                             // statement only (local variable.)
+        // statement only (local variable.)
         cout << num << " is " << diff << " greater than " << min << endl;
     }
     // cout << diff; // error (undefined diff)

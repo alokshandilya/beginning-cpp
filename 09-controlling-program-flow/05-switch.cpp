@@ -32,7 +32,7 @@ int main() {
     case 'd':
     case 'D':
         cout << "Hmm, you should strive for a better grade. All you need is "
-                "60-69"
+             "60-69"
              << endl;
         break;
     case 'f':

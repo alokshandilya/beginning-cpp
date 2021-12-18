@@ -31,8 +31,7 @@ int main() {
     cout << "long : " << LONG_MAX << endl;
     cout << "long long : " << LLONG_MAX
          << endl; // notice it's LLONG_MAX and not LONGLONG_MAX
-                  // LLONG_MAX and LONG_MAX displays same value in
-                  // my current machine.
+    // LLONG_MAX and LONG_MAX displays same value in my current machine.
 
     /************************************************
      *  sizeof can also be used with variable name

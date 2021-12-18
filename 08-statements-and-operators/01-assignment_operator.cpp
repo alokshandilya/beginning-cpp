@@ -1,7 +1,7 @@
 /**************************************************************
- *      Quick introduction to expressions and statements
- *      a + b is an expression and a + b; is a statement.
- *      [More in NOTES]
+ *   Quick introduction to expressions and statements
+ *   a + b is an expression and a + b; is a statement.
+ *   [More in NOTES]
  * ***********************************************************/
 
 // Section 8

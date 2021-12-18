@@ -31,11 +31,11 @@ int main() {
     int package_volume{};
     cout << "Welcome to the package cost calculator" << endl;
     cout << "Enter length, width, and height of the package separated by "
-            "spaces : ";
+         "spaces : ";
     cin >> length >> width >> height;
 
     if (length > max_dimension_length || width > max_dimension_length ||
-        height > max_dimension_length) {
+            height > max_dimension_length) {
         cout << "Sorry, package rejected - dimension exceeded" << endl;
     } else {
         double package_cost{};

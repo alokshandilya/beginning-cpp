@@ -42,7 +42,7 @@ int main() {
     return 0;
 }
 
-// Output
+// output
 //
 // Hello world!HelloWorld
 // Hello world!

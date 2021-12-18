@@ -11,7 +11,7 @@ using std::setprecision;
 using std::vector;
 
 int main() {
-    int scores[]{10, 20, 30};
+    int scores[] {10, 20, 30};
     for (auto score : scores) // here compiler will deduce auto as int itself
         cout << score << endl;
 
@@ -27,7 +27,9 @@ int main() {
     cout << fixed << setprecision(1); // 1 number after decimal (round off)
     cout << "Average temperature is " << average_temp << endl;
 
-    for (auto val : {1, 2, 3, 4, 5})
+    for (auto val : {
+                1, 2, 3, 4, 5
+            })
         cout << val << endl;
 
     for (auto c : "This is a test")

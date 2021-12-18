@@ -36,9 +36,8 @@ int main() {
     result = 0;
     cout << "Counter : " << counter << endl; // outputs 10
     result = ++counter; // Note the pre increment.. first value is increased by
-                        // 1 and then it binds to result hence , it will
-                        // store 11. this is same as -> counter = counter + 1;
-                        // result = counter;
+    // 1 and then it binds to result hence , it will store 11.
+    // this is same as -> counter = counter + 1; result = counter;
     cout << "Counter : " << counter << endl; // outputs 11
     cout << "Result : " << result << endl;   // outputs 11
 
@@ -48,8 +47,8 @@ int main() {
     result = 0;
     cout << "Counter : " << counter << endl; // outputs 10
     result = counter++; // Note the post increment.. first counter value 10
-                        // binds to results and then counter becomes 11 this is
-                        // same as -> result = counter; counter = counter + 1;
+    // binds to results and then counter becomes 11 this is
+    // same as -> result = counter; counter = counter + 1;
     cout << "Counter : " << counter << endl; // outputs 11
     cout << "Result : " << result << endl;   // outputs 10
 
@@ -59,11 +58,11 @@ int main() {
     result = 0;
     cout << "Counter : " << counter << endl; // outputs 10
     result = ++counter + 10; // Note the pre increment..
-                             // so counter becomes 11 and
-                             // + 10 makes it 21 and results gets binded to 21
-                             // this is same as ->
-                             // counter = counter +1;
-                             // result = counter +10;
+    // so counter becomes 11 and
+    // + 10 makes it 21 and results gets binded to 21
+    // this is same as ->
+    // counter = counter +1;
+    // result = counter +10;
     cout << "Counter : " << counter << endl; // output 11
     cout << "Result : " << result << endl;   // output 21
 
@@ -73,10 +72,10 @@ int main() {
     result = 0;
     cout << "Counter : " << counter << endl; // outputs 10
     result = counter++ + 10; // Note the post increment.. so counter(10) + 10 ..
-                             // so 20 is binded to result and counter becomes 11
-                             // this is same is ->
-                             // result = counter + 10;
-                             // counter = counter + 1;
+    // so 20 is binded to result and counter becomes 11
+    // this is same is ->
+    // result = counter + 10;
+    // counter = counter + 1;
     cout << "Counter : " << counter << endl; // outputs 11
     cout << "Result : " << result << endl;   // outputs 20
     cout << endl;

@@ -18,7 +18,7 @@ int main() {
      *      Integer Type
      * **************************/
     unsigned short int examScore{77}; // same as unsigned short examScore {77};
-                                      // by default it's signed.
+    // by default it's signed.
     cout << "My Exam Score is : " << examScore << endl;
 
     int countriesRepresented{65};
@@ -27,7 +27,7 @@ int main() {
 
     // long peopleInIndia{1,396,864,884}; //invalid
     long peopleInIndia{1'396'864'884}; // valid (' can be ignored but improves
-                                       // readability) -- c++14 Feature
+    // readability) -- c++14 Feature
     cout << "There are about " << peopleInIndia << " people in India." << endl;
 
     // long peopleOnEarth {7'800'000'000}; // may not run with long and can
@@ -37,7 +37,7 @@ int main() {
 
     long long distanceToAlphaCentauri{
         9'461'000'000'000}; // may run also with long depends on compiler and
-                            // architecture.
+    // architecture.
     cout << "The distance to alpha centauri is : " << distanceToAlphaCentauri
          << " km" << endl;
 

@@ -7,7 +7,7 @@ using std::cout;
 using std::endl;
 
 int main() {
-    char vowels[]{'a', 'e', 'i', 'o', 'u'};
+    char vowels[] {'a', 'e', 'i', 'o', 'u'};
     // no size in [] so, compiler will size it based on the initializer list,
     // here size will be 5 (from 0 to 4).
     cout << "\nThe first vowel is: " << vowels[0] << endl; // prints a
@@ -17,7 +17,7 @@ int main() {
     // out of bounds -> don't do this!! will crash or produce stack smashing
     // error, error can vary on different operating systems.
 
-    double hiTemps[]{90.1, 89.8, 77.5, 81.6};
+    double hiTemps[] {90.1, 89.8, 77.5, 81.6};
     cout << "\nThe first high temperature is: " << hiTemps[0]
          << endl; // will print 90.1
     hiTemps[0] = 100.7;
@@ -41,7 +41,7 @@ int main() {
     // int testScores [5] {100,200};
     // will initialize 1st element to 100, 2nd to 200 and rest 3 elements to 0
 
-    int testScores[]{100, 90, 80, 70, 60};
+    int testScores[] {100, 90, 80, 70, 60};
 
     cout << "\nFirst score at index 0: " << testScores[0] << endl;
     cout << "Second score at index 1: " << testScores[1] << endl;
@@ -66,10 +66,10 @@ int main() {
 
     cout << "\nNotice what the value of the array name is : " << testScores
          << endl; // this will give a hexadecimal value which is actually
-                  // the address of the array.
-                  // So remember outputting array without index
-                  // will output the location of 1st element of the array.
-                  // name of the array is the location of the array.
+    // the address of the array.
+    // So remember outputting array without index will output the location of
+    // 1st element of the array.
+    // name of the array is the location of the array.
 
     cout << endl;
     return 0;

@@ -2,34 +2,34 @@
 // Challenge
 
 /* Write a C++ program as follows:
- *
- * Declare 2 empty vectors of integers named
- * vector1 and vector2, respectively.
- *
- * Add 10 and 20 to vector1 dynamically using push_back
- * Display the elements in vector1 using the at() method as well as its size
- * using the size() method
- *
- * Add 100 and 200 to vector2 dynamically using push_back
- * Display the elements in vector2 using the at() method as well as its size
- * using the size() method
- *
- * Declare an empty 2D vector called vector2D
- * Remember, that a 2D vector is a vector of vector<int>
- *
- * Add vector1 to vector2D dynamically using push_back
- * Add vector2 to vector2D dynamically using push_back
- *
- * Display the elements in vector2D using the at() method
- *
- * Change vector1.at(0) to 1000
- *
- * Display the elements in vector2D again using the at() method
- *
- * Display the elements in vector1
- *
- * What did you expect? Did you get what you expected? What do you think
- * happended?
+  
+   Declare 2 empty vectors of integers named
+   vector1 and vector2, respectively.
+  
+   Add 10 and 20 to vector1 dynamically using push_back
+   Display the elements in vector1 using the at() method as well as its size
+   using the size() method
+  
+   Add 100 and 200 to vector2 dynamically using push_back
+   Display the elements in vector2 using the at() method as well as its size
+   using the size() method
+  
+   Declare an empty 2D vector called vector2D
+   Remember, that a 2D vector is a vector of vector<int>
+  
+   Add vector1 to vector2D dynamically using push_back
+   Add vector2 to vector2D dynamically using push_back
+  
+   Display the elements in vector2D using the at() method
+  
+   Change vector1.at(0) to 1000
+  
+   Display the elements in vector2D again using the at() method
+  
+   Display the elements in vector1
+  
+   What did you expect? Did you get what you expected? What do you think
+   happended?
 */
 
 #include <iostream>
@@ -76,11 +76,9 @@ int main() {
          << vector2D.at(0).at(0) << "\t" << vector2D.at(0).at(1)
          << endl // outputs  10   20
          << vector2D.at(1).at(0) << "\t" << vector2D.at(1).at(1)
-         << endl; // outputs  100  200
-                  // and not 1000  200
-                  // here, above output will be same because, when we deal with
-                  // int, float, double etc. then only the copy of vectors is
-                  // modified.
+         << endl; // outputs  100  20 and not 1000  200
+    // here, above output will be same because, when we deal with int, float,
+    // double etc. then only the copy of vectors is modified.
 
     // when the push_back() method is used, it copies the value of the original
     // and adds that  copy to the vector list not changing the original value.

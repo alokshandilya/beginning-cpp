@@ -37,4 +37,3 @@ int main() {
 // Enter the length and breadth of the room in feet.
 // 7 8
 // *********  The Area of the Room is : 56 square feet  **********
-

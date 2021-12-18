@@ -44,7 +44,7 @@ int main() {
     // const float salesTaxPercent {0.06};
     const int estimateExpiry{30}; // days
     cout << "Alok's Carpet Cleaning Service\nCharges $30 per room\nSales tax "
-            "is 6%"
+         "is 6%"
          << endl;
     cout << "Estimates are valid for 30 days" << endl << endl;
 
