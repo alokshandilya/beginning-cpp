@@ -7,10 +7,10 @@ using std::endl;
 
 int main() {
     // char uninit_string[20];
-    char first_name[20]{};
-    char last_name[20]{};
-    char full_name[50]{};
-    char temp[50]{};
+    char first_name[20] {};
+    char last_name[20] {};
+    char full_name[50] {};
+    char temp[50] {};
     // cout << uninit_string; // Will likely display garbage! and warning.
     cout << "Please enter your first name : ";
     cin >> first_name;

@@ -4,7 +4,7 @@ using std::cout;
 using std::endl;
 
 int main() {
-    char str[]{"1234'5sddd'fdffg\n\t&^%23**~Alok Shandilya~     @!()-+=%^?<>;:"};
+    char str[] {"1234'5sddd'fdffg\n\t&^%23**~Alok Shandilya~     @!()-+=%^?<>;:"};
     int num_letters{};
     int num_digits{};
     int num_whitespace{};
@@ -28,7 +28,7 @@ int main() {
     cout << "Punctuation : " << num_punctuation << endl;
     cout << "Others : " << num_others << endl;
     cout << endl;
-    char str1[]{"This is a test - 1 2 3"};
+    char str1[] {"This is a test - 1 2 3"};
     for (char c : str1) {
         cout << static_cast<char>(toupper(c));
     }
